@@ -1,189 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
 <title>CareConnect Solutions</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-:root {
-  --primary: #1f6ae1;
-  --secondary: #0f2a44;
-  --bg: #f4f7fb;
-  --card: #ffffff;
-}
-
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: var(--bg);
-  color: #333;
-  line-height: 1.6;
-}
-<header>
-  <nav style="max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;">
-    <h2>CareConnect</h2>
-    <div>
-      <a href="index.html" style="color:white;margin:0 12px;">Home</a>
-      <a href="services.html" style="color:white;margin:0 12px;">Services</a>
-      <a href="pricing.html" style="color:white;margin:0 12px;">Pricing</a>
-      <a href="about.html" style="color:white;margin:0 12px;">About</a>
-      <a href="contact.html" style="color:white;margin:0 12px;">Contact</a>
-    </div>
-  </nav>
-
-  <div style="margin-top:60px;">
-    <h1>CareConnect Solutions</h1>
-    <p>Helping healthcare providers improve patient access and grow through better service.</p>
-    <a href="contact.html" class="btn">Get a Free 7-Day Trial</a>
-  </div>
-</header>
-
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 30px;
-  background: white;
-  color: var(--primary);
-  padding: 14px 30px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 70px 20px;
-}
-
-h2 {
-  text-align: center;
-  color: var(--secondary);
-  font-size: 2.2rem;
-  margin-bottom: 40px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-}
-
-.card {
-  background: var(--card);
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-.card h3 {
-  color: var(--primary);
-  margin-bottom: 10px;
-}
-
-.highlight {
-  background: white;
-  border-radius: 20px;
-  padding: 40px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-}
-
-footer {
-  background: var(--secondary);
-  color: white;
-  text-align: center;
-  padding: 30px 20px;
-}
-
-footer p {
-  margin: 5px 0;
-}
-
-@media (max-width: 600px) {
-  header h1 { font-size: 2.2rem; }
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
+<nav>
+  <div class="nav-container">
+    <strong>CareConnect</strong>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
 
 <header>
   <h1>CareConnect Solutions</h1>
-  <p>Helping healthcare providers in the United States and Canada improve patient access, reduce missed appointments, and grow through better customer experience.</p>
-  <a href="#contact" class="btn">Get a Free 7-Day Trial</a>
+  <p>Helping healthcare providers in the US & Canada improve patient access and revenue.</p>
+  <a href="contact.html" class="btn">Start Free 7-Day Trial</a>
 </header>
 
 <section>
-  <h2>Why Clinics Choose Us</h2>
   <div class="grid">
-    <div class="card">
-      <h3>Fewer Missed Calls</h3>
-      <p>We ensure every patient inquiry is answered professionally, so no opportunity is lost.</p>
-    </div>
-    <div class="card">
-      <h3>Higher Show Rates</h3>
-      <p>Automated reminders and follow-ups reduce no-shows and cancellations.</p>
-    </div>
-    <div class="card">
-      <h3>Lower Staff Stress</h3>
-      <p>Your medical team focuses on care while we handle patient communication.</p>
-    </div>
+    <div class="card"><h3>Fewer Missed Calls</h3><p>We ensure every inquiry is answered.</p></div>
+    <div class="card"><h3>Higher Show Rates</h3><p>Automated reminders reduce no-shows.</p></div>
+    <div class="card"><h3>Lower Staff Stress</h3><p>Your team focuses on care.</p></div>
   </div>
 </section>
 
-<section>
-  <h2>Our Services</h2>
-  <div class="grid">
-    <div class="card"><h3>Virtual Front Desk</h3><p>Professional call answering and appointment scheduling.</p></div>
-    <div class="card"><h3>Patient Follow-Ups</h3><p>Post-visit check-ins and care reminders.</p></div>
-    <div class="card"><h3>Telehealth Support</h3><p>Patient onboarding and technical assistance.</p></div>
-    <div class="card"><h3>Appointment Reminders</h3><p>SMS and email reminders to reduce no-shows.</p></div>
-  </div>
-</section>
-
-<section>
-  <h2>Pricing</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Basic</h3>
-      <p><strong>$599 / month</strong></p>
-      <p>Scheduling, reminders, patient support</p>
-    </div>
-    <div class="card">
-      <h3>Growth</h3>
-      <p><strong>$1,199 / month</strong></p>
-      <p>Follow-ups, reports, telehealth support</p>
-    </div>
-    <div class="card">
-      <h3>Custom</h3>
-      <p>Multilingual support & extended hours</p>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="highlight">
-    <h2>Let’s Work Together</h2>
-    <p style="text-align:center; max-width:700px; margin:auto;">
-      Start with a free 7-day trial and see how improved patient communication can increase satisfaction and revenue.
-    </p>
-    <p style="text-align:center; margin-top:30px;">
-      📧 Email: careconnectsolutions@email.com<br>
-      📞 Phone: +1 (000) 000-0000
-    </p>
-  </div>
-</section>
-
-<footer>
-  <p>© 2025 CareConnect Solutions</p>
-  <p>Healthcare Customer Experience Services</p>
-</footer>
-
+<footer>© 2025 CareConnect Solutions</footer>
 </body>
 </html>
