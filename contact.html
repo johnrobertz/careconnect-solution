@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Contact Us | CareConnect</title>
+<title>Contact | CareConnect</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body{font-family:Inter;background:#f4f7fb;margin:0;}
-header,footer{background:#1f6ae1;color:white;text-align:center;padding:20px;}
-section{max-width:700px;margin:auto;padding:60px 20px;background:white;border-radius:20px;}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <a href="index.html">Home</a> |
-  <a href="services.html">Services</a> |
-  <a href="pricing.html">Pricing</a>
-</header>
+<nav><div class="nav-container">
+<strong>CareConnect</strong>
+<div>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="pricing.html">Pricing</a>
+</div></div></nav>
 
-<section>
-  <h1>Contact Us</h1>
-  <p>Email: careconnectsolutions@email.com</p>
-  <p>Phone: +1 (000) 000-0000</p>
-  <p><strong>Free 7-Day Trial Available</strong></p>
+<section class="card">
+<h1>Contact Us</h1>
+
+<form action="https://formspree.io/f/xyzzabcd" method="POST">
+<input type="text" name="name" placeholder="Your Name" required><br><br>
+<input type="email" name="email" placeholder="Your Email" required><br><br>
+<textarea name="message" placeholder="How can we help?" required></textarea><br><br>
+<button type="submit">Send Message</button>
+</form>
+
+<p><strong>Free 7-Day Trial Available</strong></p>
 </section>
 
 <footer>© 2025 CareConnect Solutions</footer>
